@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: white;
+}
+/*
+==================================
+NAVBAR
+==================================
+*/
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #333;
+}
+li {
+  display: inline-block;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+
+
+/*
+====================================
+DESCRIPTION
+====================================
+*/
+.about {
+  padding-bottom: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: #f2f2f2;
+}
+.about img {
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  margin-top: 8px;
+  margin-left: 33px;
+}
+.about h2 {
+  font-family: 'Merriweather', sans-serif;
+  line-height: 35px;
+  width: 75%;
+  margin-right: 15px;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+.about h2,
+ div {
+  display: inline-block;
+  vertical-align: top;
+}
+/*
+===================================
+WORK
+====================================
+*/
+.style-1 {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-family: 'Lato', sans-serif;
+}
+#container {
+  width: 90%;
+  overflow: hidden;
+  background: white;
+  margin-left: 65px;
+}
+.photobanner {
+  height: 233px;
+  width: 3550px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.photobanner img {
+  height: 233px;
+  width: 350px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.photobanner img:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	cursor: pointer;
+
+	-webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+.first {
+	-webkit-animation: bannermove 30s linear infinite;
+	   -moz-animation: bannermove 30s linear infinite;
+	    -ms-animation: bannermove 30s linear infinite;
+	     -o-animation: bannermove 30s linear infinite;
+	        animation: bannermove 30s linear infinite;
+}
+@keyframes "bannermove" {
+ 0% {
+    margin-left: -2125px;
+ }
+ 100% {
+    margin-left: 0;
+ }
+}
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: -2125px;
+ }
+ 100% {
+   margin-left: 0;
+ }
+}
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: -2125px;
+ }
+ 100% {
+   margin-left: 0;
+ }
+}
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: -2125px;
+ }
+ 100% {
+   margin-left: 0;
+ }
+}
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: -2125px;
+ }
+ 100% {
+   margin-left: 0;
+ }
+}
+/*
+======================================
+SKILLS
+======================================
+*/
+.style-2 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  font-family: 'Lato', sans-serif;
+}
+#skills-container {
+  margin-bottom: 50px;
+  width: 65%;
+  margin: 0 auto;
+  background-color: white;
+}
+#skills-container .style {
+  margin-top: 10px;
+}
+.logo-two {
+  display: inline-block;
+  vertical-align: top;
+  width: 230px;
+  height: 230px;
+  margin-left: 45px;
+}
+.size {
+  height: 230px;
+  width: 230px;
+  display: inline-block;
+  vertical-align: top;
+}
+#relative {
+  position: relative;
+  margin-left: 45px;
+}
+#new {
+  opacity: 0;
+}
+#new:hover {
+  -webkit-transition: opacity 2.0s ease-in;
+    -moz-transition: opacity 2.0s ease-in;
+      -o-transition: opacity 2.0s ease-in;
+        transition: opacity 2.0s ease-in;
+                          opacity: 0.8;
+}
+span {
+  position: absolute;
+  top: 120px;
+  left: 65.5px;
+  background: black;
+  color: white;
+  transform: scale(1.6,2);
+  padding: 4px;
+  border-radius: 25px;
+  -webkit-transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+      -o-transition: opacity .5s ease-out;
+        transition: opacity .5s ease-out;
+                          opacity: 0;
+}
+
+/*
+========================================
+ADDITONAL INFO & CONTACT FORM
+========================================
+*/
+.style-3 {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 45px;
+  font-family: 'Lato', sans-serif;
+}
+#add-info-container {
+  width: 700px;
+  margin: 0 auto;
+  height: 500px;
+}
+form {
+  margin-left: 25px;
+}
+form fieldset {
+  height: 439px;
+  width: 345px;
+  border-radius: 8px;
+}
+#fieldset-style {
+  height: 65px;
+  padding-top: 11.4px;
+  background-color: #ccccff;
+  width: 345px;
+  border: transparent;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+#fieldset-style-two {
+  background-color: #ccccff;
+  height: 30px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border: transparent;
+  margin-bottom: 5px;
+}
+form input {
+  margin-bottom: 18px;
+  margin-top: 2px;
+  height: 30px;
+  width: 345px;
+  border-radius: 6px;
+}
+form textarea {
+  margin-top: 2px;
+  border-radius: 6px;
+  max-height: 90px;
+  max-width: 345px;
+  width: 100%;
+  padding-bottom: 70px;
+  margin-bottom: 10px;
+}
+.form-btn {
+  width: 100px;
+  background-color: #333;
+  color: white;
+  margin-left: 120px;
+  margin-top: 10px;
+}
+article {
+  height: 450px;
+  line-height: 20px;
+}
+article p {
+  font-family: 'Merriweather', sans-serif;
+}
+.col-1-2 {
+  display: inline-block;
+  width: 46%;
+  vertical-align: top;
+}
+label {
+  font-family: 'Lato', sans-serif;
+  margin-left: 2px;
+}
+/*
+======================================
+FOOTER
+======================================
+*/
+footer {
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 15px 17px;
+  background-color: #333;
+  color: white;
+}
+
+footer i,
+footer p {
+  display: inline-block;
+}
+.fa-facebook {
+  background-color: #3B5998;
+  border-radius: 8px;
+  border: 1px solid white;
+  font-size: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  margin-left: 500px;
+}
+.fa-google-plus {
+  background-color: #f44242;
+  font-size: 30px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 5px;
+  margin-left: 35px;
+}
+.fa-twitter {
+  background-color: #00b2ff;
+  font-size: 30px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 5px;
+  margin-left: 35px;
+}
